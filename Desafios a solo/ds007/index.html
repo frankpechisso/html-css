@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem dinamica</title>
+</head>
+<body>
+    <h1>Desafio de imagem dinamica</h1>
+    <p>A qui iremos ver imagem que se adapta ao tamanho da tela do seu computador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagem/paisagem-p.png" type="image/png">
+        <source media="(max-width: 1025px)" srcset="imagem/paisagem-m.png" type="image/png">
+        <img src="imagem/paisagem-g.png" alt="essa e uma imagem de uma moca num ambiente agradavel">
+    </picture>
+
+
+</body>
+</html>

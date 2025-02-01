@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclass</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            padding: 10px;
+            text-align: justify;
+            
+
+        }
+        p{
+            color: rgb(255, 0, 0);
+        }
+
+        p{
+            display: none;
+            width: 100px;
+            height: 100px;
+            background-color: rgba(255, 145, 0, 0.486);
+            text-align: center;
+            
+        }
+        div:hover{
+            color:aqua ;
+        }
+        div:hover > p{
+            display: block;
+            color: brown
+        }
+    </style>
+</head>
+<body>
+    <h1>pseudo classe</h1>
+    <span>Vamos testar o pseudo classe</span><br>
+    <br>
+<div>passe o mause sobre esse texto 
+    <p>Frank</p>
+</div>
+<br>
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis pariatur consectetur, eos ex hic officia omnis facilis voluptatum vitae laudantium enim, saepe magni aperiam est eligendi velit assumenda. Ullam, illo?
+    </span>
+    <p>Texto escondido</p>
+    
+</body>
+</html>
