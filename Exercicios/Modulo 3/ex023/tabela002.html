@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative; /**Usamos para colocar o sticky-  que e color o cabecalho da table**/
+        }
+    
+        caption{
+            background-color: rgb(197, 197, 197);
+        padding: 10px;
+        color: black;
+        font-weight: bold;
+        font-size: larger;
+        }
+        
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+            
+            
+        }
+       
+        thead > tr > th{
+            position:sticky;
+            top: -1px;
+            background-color: rgb(133, 133, 133);
+        }
+        thead, tfoot{
+            background-color: grey;
+            color: white;
+        }
+        tbody td:hover{
+            background-color: rgba(0, 0, 0, 0.068);
+            color: rgb(0, 255, 13);
+        }
+        tbody td.numero{
+            text-align: right;
+        }
+        tbody td.numero:hover{
+            background-color: rgba(0, 0, 0, 0.192);
+            
+        }
+        tbody > tr:nth-child(2n){
+            background-color:  rgba(187, 0, 0, 0.685);
+        }
+        tbody > tr:nth-child(2n-1){
+            background-color: rgba(242, 104, 255, 0.747);
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela Grandes</h1>
+    <table>
+        <caption>Essa e a lengenda da minha tabela
+
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th
+>
+                <th scope="col" style="width: 50px;">Populacao</th
+>               
+            </tr>
+            
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mocambique</td>
+                <td class="numero">98.892.192</td>
+                
+            </tr>
+            <tr>
+                <td>Angola</td>
+                <td class="numero">793.812.263</td>
+                
+            </tr>
+            <tr>
+                <td>Africa do sul</td>
+                <td class="numero">908.383</td>
+                
+            </tr>
+            <tr>
+                <td>Guine Bissau</td>
+                <td class="numero">776.373</td>
+                
+            </tr>
+            <tr>
+                <td>Suatin</td>
+                <td class="numero">874.012</td>
+                
+            </tr>
+            <tr>
+                <td>Egito</td>
+                <td class="numero">903.383.383</td>
+                
+            </tr>
+            <tr>
+                <td>Tanzania</td>
+                <td class="numero">873.883.30</td>
+                
+            </tr>
+            <tr>
+                <td>Malawe</td>
+                <td class="numero">983.837.33</td>
+                
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row">Total de habitantes</th>
+            <td><strong>398.383.383.391</strong></td>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique vero officiis sit fuga, debitis quasi commodi corrupti voluptatibus quaerat saepe iure facere, velit ea veniam facilis, sapiente recusandae? Provident, minus.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque quos voluptatibus aliquam soluta architecto quae officiis ad! Ab facilis unde nemo beatae, deleniti tempora laborum dolore exercitationem corrupti? Enim, maiores?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum ea eos, tenetur quisquam porro consequatur eius repellat aperiam enim quasi repudiandae amet ab, incidunt sint. Natus totam earum quaerat voluptatum!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error veniam adipisci explicabo laborum eligendi ea vero quasi corporis quo numquam itaque voluptatem sint provident consequuntur tempore repudiandae, ducimus labore! Repellendus!labo
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, accusantium asperiores vero iste minima delectus, consequuntur ut voluptatibus voluptate quasi officiis quae ipsam similique, eveniet eos! Delectus dolorum eius porro?
+    </p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique vero officiis sit fuga, debitis quasi commodi corrupti voluptatibus quaerat saepe iure facere, velit ea veniam facilis, sapiente recusandae? Provident, minus.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque quos voluptatibus aliquam soluta architecto quae officiis ad! Ab facilis unde nemo beatae, deleniti tempora laborum dolore exercitationem corrupti? Enim, maiores?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum ea eos, tenetur quisquam porro consequatur eius repellat aperiam enim quasi repudiandae amet ab, incidunt sint. Natus totam earum quaerat voluptatum!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error veniam adipisci explicabo laborum eligendi ea vero quasi corporis quo numquam itaque voluptatem sint provident consequuntur tempore repudiandae, ducimus labore! Repellendus!labo
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, accusantium asperiores vero iste minima delectus, consequuntur ut voluptatibus voluptate quasi officiis quae ipsam similique, eveniet eos! Delectus dolorum eius porro?
+    </p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique vero officiis sit fuga, debitis quasi commodi corrupti voluptatibus quaerat saepe iure facere, velit ea veniam facilis, sapiente recusandae? Provident, minus.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque quos voluptatibus aliquam soluta architecto quae officiis ad! Ab facilis unde nemo beatae, deleniti tempora laborum dolore exercitationem corrupti? Enim, maiores?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum ea eos, tenetur quisquam porro consequatur eius repellat aperiam enim quasi repudiandae amet ab, incidunt sint. Natus totam earum quaerat voluptatum!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error veniam adipisci explicabo laborum eligendi ea vero quasi corporis quo numquam itaque voluptatem sint provident consequuntur tempore repudiandae, ducimus labore! Repellendus!labo
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, accusantium asperiores vero iste minima delectus, consequuntur ut voluptatibus voluptate quasi officiis quae ipsam similique, eveniet eos! Delectus dolorum eius porro?
+    </p>
+</body>
+</html>
